@@ -18,21 +18,23 @@ const Login = ({ onLogin }) => {
   };
 
   return (
-    <div className="registrate_container">
-      <h1> Login </h1>
-      <form onSubmit={login}>
-        <input
-          type="text"
-          placeholder="name"
-          onChange={(e) => setUserName(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="password"
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <input className="btn" type="submit" value="Login" />
-      </form>
+    <div className="registrate-bg">
+      <div className="registrate_container">
+        <h1 className="h1-black"> Login </h1>
+        <form onSubmit={login}>
+          <input
+            type="text"
+            placeholder="name"
+            onChange={(e) => setUserName(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <input className="btn" type="submit" value="Login" />
+        </form>
+      </div>
     </div>
   );
 };

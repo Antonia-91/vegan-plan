@@ -32,7 +32,9 @@ const ShoppingList = () => {
       </select>
       <button className="btn-middle">Spara</button>
    </form>
-   <button className="btn-middle">Ladda ner inköpslistan</button>
+   <div className="mypage-btn">
+    <button className="btn-middle">Ladda ner inköpslistan</button>
+   </div>
   </div>
     </>
       );

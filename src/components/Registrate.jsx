@@ -24,31 +24,33 @@ const Registrate = ({ onAddNewUser }) => {
   };
 
   return (
-    <div className="registrate_container">
-      <h1> Registrate</h1>
-      <form onSubmit={onAdd}>
-        <input
-          type="text"
-          placeholder="name"
-          onChange={(e) => setFullName(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="username"
-          onChange={(e) => setUserName(e.target.value)}
-        />
-        <input
-          type="email"
-          placeholder="email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="password"
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <input className="btn" type="submit" value="Save" />
-      </form>
+    <div className="registrate-bg">
+      <div className="registrate_container">
+        <h1 className="h1-black"> Registrera konto</h1>
+        <form onSubmit={onAdd}>
+          <input
+            type="text"
+            placeholder="Namn"
+            onChange={(e) => setFullName(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Användarnamn"
+            onChange={(e) => setUserName(e.target.value)}
+          />
+          <input
+            type="email"
+            placeholder="Mail"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Lösenord"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <input className="btn" type="submit" value="Spara" />
+        </form>
+      </div>
     </div>
   );
 };
