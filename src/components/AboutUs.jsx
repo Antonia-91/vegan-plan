@@ -5,10 +5,10 @@ const AboutUs = () => {
   return (
   <>
     <div className="header-about">
-      <img className="logo-about" src={'./vegan-plan-logo-white.png'} width={250} alt='vegan plan logo'/>
+      <img className="logo-about" src={require('../img/vegan-plan-logo-white.png').default} width={250} alt='vegan plan logo'/>
     </div>
     <div className="about">
-      <img className="about-planet" src={'./planet-green.png'} width={180} alt='planet'/>
+      <img className="about-planet" src={require('../img/planet-green.png').default} width={180} alt='planet'/>
       <span className="text-over">Vegansk mat</span>
       <h1 className="about-h1">Mat som gör skillnad<br />– för din hälsa &amp; klimatet</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

@@ -6,7 +6,7 @@ const Prenumeration = () => {
       <div className="prenumeration">
         <img
           className="icon-prenumeration"
-          src={"./icon-fork.png"}
+          src={require('../img/icon-fork.png').default}
           width={140}
           alt="icon fork and knife"
         />
