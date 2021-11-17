@@ -10,6 +10,7 @@ const Recipes = (props) => {
       <>
       <RecipesHeader />
       <Search setRecipes={props.setRecipes} setOneRecipe={props.setOneRecipe}/>
+      
       <SingleRecipe
         oneRecipe={props.oneRecipe}
         setOneRecipe={props.setOneRecipe}
@@ -22,7 +23,9 @@ const Recipes = (props) => {
       <>
       <RecipesHeader />
       <Search setRecipes={props.setRecipes} setOneRecipe={props.setOneRecipe}/>
+      <div className="recipe-container">
       <RecipeGrid recipes={props.recipes} setOneRecipe ={props.setOneRecipe} limitRecipes={false}/>
+      </div>
       </>
     );
   }

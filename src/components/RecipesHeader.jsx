@@ -7,8 +7,8 @@ const RecipesHeader = () => {
   <div className="header-recipes">
     <div className="start-box">
       <h2 className="start-h2">Inga konstigheter</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      <span className="text-under"><p>Läs mer</p></span>
+      <p>Ingredienser från naturens skafferi - för bättre hälsa och miljö!</p>
+      <a href="/about"><span className="text-under-small-start"><p>Läs mer</p></span></a>
     </div>
   </div>
   </>

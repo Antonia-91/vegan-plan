@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const RecipeGrid = ({recipes, setOneRecipe, limitRecipes}) => {
     
-if (limitRecipes) {recipes = recipes.slice(0, 4)};
+if (limitRecipes) {recipes = recipes.slice(0, 3)};
     
     {return (<div className="Recipe-Grid">
         {recipes.map((recipe) => (

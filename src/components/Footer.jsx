@@ -3,9 +3,9 @@ const Footer = () => {
     <footer>
     <img src={require('../img/vegan-plan-logo.png').default} width={130} alt='Vegan Plan logo'/>
     <ul className="nav-footer">
-      <li>Alla recept</li>
-      <li>Veckans meny</li>
-      <li>Om oss</li>
+      <li><a href="/recept">Alla recept</a></li>
+      <li><a href="/mina-sidor">Veckans meny</a></li>
+      <li><a href="/about">Om oss</a></li>
     </ul>
     </footer>
     );

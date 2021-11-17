@@ -13,19 +13,19 @@ const Start = ({recipes, setOneRecipe}) => {
         </div>
       </div>
       <div className="our-vision">
-      <img className="start-planet" src={'./planet.png'} width={180} alt='planet'/>
+      <img className="start-planet" src={'./planet.png'} width={200} alt='planet'/>
         <h1>Mat som gör skillnad<br />– för din hälsa &amp; klimatet</h1>
         <div className="text-container">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <span className="text-under"><p>Läs mer</p></span>
+          <p>Vi befinner oss i en klimatkris och vårt val av mat har en enorm påverkan på planeten. Vegan plan ska göra det enkelt för fler människor att njuta av varierad och hälsosam vegansk mat. </p>
+          <a href="/about"><span className="text-under-small-start"><p>Läs mer</p></span></a>
         </div>
       </div>
       <div className="recipes-carousel">
         <h4 className="h4-start">Näringsrika och enkla middagsrecept</h4>
         <RecipeGrid recipes={recipes} setOneRecipe = {setOneRecipe} limitRecipes={true}/>
       </div>
-      <div className="banner">
-      </div>
+      <a href="/about"><div className="banner">
+      </div></a>
     </>
   )
 }
