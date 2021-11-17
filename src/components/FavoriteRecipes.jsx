@@ -4,7 +4,8 @@ const FavoriteRecipes = () => {
     const [menuData, setMenuData] = useState([]);
 
     const fetchMenuData= async ()=>{
-        const res = await fetch('http://localhost:3001/weeklyMenu');
+        // const res = await fetch('http://localhost:3001/weeklyMenu'); //lokal json-server
+        const res = await fetch('https://my-json-server.typicode.com/rebecka-oscarsson/vegan-backend/weeklyMenu');
         const data = await res.json();
         console.log("Weekly Menu:", data);
         return data;

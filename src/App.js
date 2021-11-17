@@ -30,8 +30,9 @@ const App = () => {
   const [oneRecipe, setOneRecipe] = useState("")
 
   useEffect(() => {
-    fetchData('http://localhost:3001/results') //tillfälligt för att spara på api-nyckeln
-      // fetchData('https://api.spoonacular.com/recipes/complexSearch?apiKey=' + apiKey + '&diet=vegan&number=5')
+    fetchData('https://my-json-server.typicode.com/rebecka-oscarsson/vegan-backend/results') //json-server för produktion
+    // fetchData('http://localhost:3001/results') //tillfälligt för att spara på api-nyckeln, lokal json
+    // fetchData('https://api.spoonacular.com/recipes/complexSearch?apiKey=' + apiKey + '&diet=vegan&number=5')
       .then((data) => {
         setRecipes(data.results);
         setStartRecipes(data.results);
