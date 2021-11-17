@@ -60,7 +60,7 @@ function NavBar() {
                 className='nav-links'
                 onClick={handleClick}
               >
-                <button className='btn-myPage'>Mina sidor</button>
+                <button className='btn-middle'>Mina sidor</button>
               </NavLink>
             </li>
             <li className='nav-item'></li>
