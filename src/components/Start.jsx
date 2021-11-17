@@ -5,7 +5,7 @@ const Start = ({recipes, setOneRecipe}) => {
   return (
     <>
       <div className="header-start">
-        <img className="start-circle" src={'./start-circle.png'} width={150} alt='circel'/>
+        <img className="start-circle" src={require('../img/start-circle.png').default} width={150} alt='circel'/>
         <div className="start-box">
           <span className="text-over">Veckans matsedel</span>
           <h2 className="start-h2">Klimatsmart &amp;<br /> hälsosam veckomeny</h2>

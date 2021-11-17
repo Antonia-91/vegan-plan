@@ -12,7 +12,7 @@ function NavBar() {
         <div className='nav-container'>
           <NavLink exact to='/' className='nav-logo'>
             <img
-              src={'./vegan-plan-logo.png'}
+              src={require('../img/vegan-plan-logo.png').default}
               width={130}
               alt='Vegan Plan logo'
             />

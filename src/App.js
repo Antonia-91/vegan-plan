@@ -24,14 +24,18 @@ const apiKey = process.env.REACT_APP_API_KEY;
 const App = () => {
   //state med hämtade recept i array
   const [recipes, setRecipes] = useState([]);
-  // state som sparar recept användaren klickat på;
+  //state med recepten som ska visas på startsidan
+  const [startRecipes, setStartRecipes] = useState([]);
+  // state med receptet användaren klickat på;
   const [oneRecipe, setOneRecipe] = useState("")
 
   useEffect(() => {
-    fetchData('http://localhost:3001/results') //tillfälligt för att spara på api-nyckeln
-      // fetchData('https://api.spoonacular.com/recipes/complexSearch?apiKey=' + apiKey + '&diet=vegan&number=5')
+    fetchData('https://my-json-server.typicode.com/rebecka-oscarsson/vegan-backend/results') //json-server för produktion
+    // fetchData('http://localhost:3001/results') //tillfälligt för att spara på api-nyckeln, lokal json
+    // fetchData('https://api.spoonacular.com/recipes/complexSearch?apiKey=' + apiKey + '&diet=vegan&number=5')
       .then((data) => {
         setRecipes(data.results);
+        setStartRecipes(data.results);
       });
   }, []);
 
@@ -58,7 +62,7 @@ const App = () => {
         <Navbar />
         <div className='main'>
           <Routes>
-            <Route exact path='/' element={<Start recipes={recipes} setOneRecipe = {setOneRecipe}/>} />
+            <Route exact path='/' element={<Start recipes={startRecipes} setOneRecipe = {setOneRecipe}/>} />
             <Route
               path='/recept'
               element={
