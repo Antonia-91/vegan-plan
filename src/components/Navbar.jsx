@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FaTimes } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
 function NavBar() {
@@ -10,7 +9,7 @@ function NavBar() {
     <>
       <nav className='navbar'>
         <div className='nav-container'>
-          <NavLink exact to='/' className='nav-logo'>
+          <NavLink to='/' className='nav-logo'>
             <img
               src={require('../img/vegan-plan-logo.png').default}
               width={130}
@@ -21,9 +20,7 @@ function NavBar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <NavLink
-                exact
                 to='/'
-                activeClassName='active'
                 className='nav-links'
                 onClick={handleClick}
               >
@@ -32,9 +29,7 @@ function NavBar() {
             </li>
             <li className='nav-item'>
               <NavLink
-                exact
                 to='/about'
-                activeClassName='active'
                 className='nav-links'
                 onClick={handleClick}
               >
@@ -43,9 +38,7 @@ function NavBar() {
             </li>
             <li className='nav-item'>
               <NavLink
-                exact
                 to='/recept'
-                activeClassName='active'
                 className='nav-links'
                 onClick={handleClick}
               >
@@ -54,9 +47,7 @@ function NavBar() {
             </li>
             <li className='nav-item'>
               <NavLink
-                exact
                 to='/mina-sidor'
-                activeClassName='active'
                 className='nav-links'
                 onClick={handleClick}
               >

@@ -7,7 +7,6 @@ if (limitRecipes) {recipes = recipes.slice(0, 3)};
     return (<div className="Recipe-Grid">
         {recipes.map((recipe) => (
             <NavLink
-              exact
               to='/recept'
               onClick={() => {
               setOneRecipe(recipe.id)
