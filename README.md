@@ -13,7 +13,7 @@ I detta project har vi andvänt oss utav React .
 Backend
 json-server i våran frontend (används inte just nu).
 MongoDB i våran server-map: för att spara users/medlemmar.
-###installera bakend
+installera backend
 öppna en ny terminal i server-mappen . " npm run devStart "
 
 API
@@ -24,4 +24,4 @@ git clone https://github.com/Antonia-91/vegan-plan.git
 npm install
 npm start
 
-Authors:
+Authors: Rebecka, Olesia, Joanna, Antonia, Tove 
