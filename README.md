@@ -11,8 +11,9 @@ ramverk:
 I detta project har vi andvänt oss utav React .
 
 Backend: 
-json-server i våran frontend.
-MongoDB i våran server-map: för att spara users/medlemmar.
+I json-server finns vår veckomatsedel sparad och som vi hämtar i Mina Sidor.
+
+Nya användare sparas i vår MongoDB som finns i server-mappen.
 installera / starta backend:
 öppna en ny terminal i server-mappen . " npm run devStart "
 
