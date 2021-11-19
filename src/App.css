@@ -234,7 +234,7 @@ a:active {
 .recipes-carousel {
   background-color: var(--color-grey);
   width: 100%;
-  padding: 50px 100px;
+  padding: 50px 0px;
   margin: 0;
 
 }
@@ -751,7 +751,7 @@ td {
 /***Recipes View***/
 
 .recipe-container {
-  padding: 50px 100px;
+  padding: 50px 0px;
 }
 .Recipe-Grid {
   display: grid;
@@ -778,7 +778,7 @@ td {
 /*** My Favorite Recipes**/
 
 .weekly-menu-container {
-  padding: 50px 100px;
+  padding: 50px 0px;
 }
 
 .Favorite-Recipes-Grid {
