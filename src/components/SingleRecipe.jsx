@@ -52,8 +52,8 @@ const SingleRecipe = ({oneRecipe, setOneRecipe}) => {
         <div className='ingredients'>
           <h3>ingredients</h3>
           <ul className='ingredient-list'>
-            {ingredients.map((ingredient) => (
-              <li key={ingredient.id}>{ingredient.originalString}</li>
+            {ingredients.map((ingredient, index) => (
+              <li key={index}>{ingredient.originalString}</li>
             ))}
           </ul>
         </div>
